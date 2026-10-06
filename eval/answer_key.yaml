@@ -1,0 +1,169 @@
+# Answer key for the Fintech A data room.
+#
+# Written before the first AI run, from a full read of every file.
+# Only eval/ scoring code reads this file. The AI pipeline must never import it
+# (a test enforces that).
+#
+# Every quote is an exact substring of the page text after whitespace is
+# collapsed (see dataroom/ingest.py:normalise). tests/test_answer_key.py
+# checks each one against the parsed PDFs.
+#
+# Fintech A and every name and number here are fictional.
+
+deck_file: 01_investor_presentation.pdf
+
+# ------------------------------------------------------------------ slide claims
+# status: what a correct tool reports.
+#   contradicted: the data room shows a different value
+#   conflict: two data room sources disagree with each other
+#   confirmed: the data room shows the same value
+# label: stated (a quote says it), computed (code derives it from cited values)
+
+slide_claims:
+  - id: V1
+    slide: 6
+    claim: "Largest customer: 12% of revenue."
+    status: contradicted
+    label: computed
+    true_value: "31.0%"
+    compute: "11.22 / 36.20"
+    evidence:
+      - {file: 05_customer_revenue_analysis.pdf, page: 2, quote: "Halden Retail Group | 11.22"}
+      - {file: 05_customer_revenue_analysis.pdf, page: 2, quote: "Total | 36.20"}
+
+  - id: V2
+    slide: 5
+    claim: "Net revenue retention: 115%."
+    status: contradicted
+    label: computed
+    true_value: "104.1%"
+    compute: "30.6 / 29.4"
+    evidence:
+      - {file: 05_customer_revenue_analysis.pdf, page: 1, quote: "Their revenue FY2024 ($M) | 29.4"}
+      - {file: 05_customer_revenue_analysis.pdf, page: 1, quote: "Their revenue FY2025 ($M) | 30.6"}
+
+  - id: V3
+    slide: 6
+    claim: "410 customers across the UK and Ireland."
+    status: contradicted
+    label: stated
+    true_value: "372"
+    evidence:
+      - {file: 05_customer_revenue_analysis.pdf, page: 1, quote: "Active customers at 31 December 2025: 372."}
+
+  - id: V4
+    slide: 4
+    claim: "Revenue FY2025: $38.0M."
+    status: conflict
+    label: stated
+    true_value: "$36.2M audited; $38.0M in management accounts including a $1.8M one-off fee"
+    evidence:
+      - {file: 03_audited_accounts_fy2025.pdf, page: 3, quote: "Revenue | 36.2"}
+      - {file: 03_audited_accounts_fy2025.pdf, page: 4, quote: "It has been deferred and is not included in FY2025 revenue."}
+      - {file: 04_management_accounts_fy2025.pdf, page: 12, quote: "Total revenue FY2025: $38.0M, including a one-off implementation fee of $1.8M"}
+
+  - id: C1
+    slide: 5
+    claim: "Gross margin: 68%."
+    status: confirmed
+    label: stated
+    evidence:
+      - {file: 03_audited_accounts_fy2025.pdf, page: 4, quote: "Gross margin for FY2025 was 68.0%."}
+
+  - id: C2
+    slide: 8
+    claim: "240 employees."
+    status: confirmed
+    label: stated
+    evidence:
+      - {file: 03_audited_accounts_fy2025.pdf, page: 1, quote: "The average number of employees during the year was 240."}
+
+  - id: C3
+    slide: 2
+    claim: "Founded in 2014."
+    status: confirmed
+    label: stated
+    evidence:
+      - {file: 03_audited_accounts_fy2025.pdf, page: 1, quote: "The company was incorporated in England in 2014."}
+
+  - id: C4
+    slide: 2
+    claim: "3 offices: London, Manchester, Dublin."
+    status: confirmed
+    label: stated
+    evidence:
+      - {file: 03_audited_accounts_fy2025.pdf, page: 1, quote: "The company operates from 3 offices in London, Manchester, Dublin."}
+
+  - id: C5
+    slide: 9
+    claim: "Senior term loan: $25.0M."
+    status: confirmed
+    label: stated
+    evidence:
+      - {file: 09_senior_facility_agreement.pdf, page: 1, quote: "The Lender makes available a term loan facility of $25.0M."}
+
+  - id: C6
+    slide: 7
+    claim: "3 products: FinPay, FinRecon, FinInsights."
+    status: confirmed
+    label: stated
+    evidence:
+      - {file: 03_audited_accounts_fy2025.pdf, page: 1, quote: "The company sells three products: FinPay, FinRecon, FinInsights."}
+
+# ------------------------------------------------------------------- red flags
+# on_list: true if a check in config/red_flags.yaml names this kind of issue.
+# Off-list issues test whether the "other unusual facts" check finds what the
+# list doesn't name.
+
+red_flags:
+  - id: D1
+    check: change_of_control
+    on_list: true
+    finding: "The loan must be repaid in full if anyone acquires more than 25% of the shares. The proposed deal sells 30%."
+    evidence:
+      - {file: 09_senior_facility_agreement.pdf, page: 4, quote: "If any person or group acting together acquires more than 25% of the shares in the Borrower, the Borrower must repay the loan in full"}
+
+  - id: D2
+    check: legal_claims
+    on_list: true
+    finding: "A former reseller claims $2.1M and threatens proceedings."
+    evidence:
+      - {file: 12_letter_hollis_grant.pdf, page: 1, quote: "Our client claims $2.1M in unpaid commission and damages"}
+
+  - id: D3
+    check: contracts_ending
+    on_list: true
+    finding: "The largest customer's contract ends on 28 February 2027 with no renewal agreed."
+    evidence:
+      - {file: 06_contract_halden_retail.pdf, page: 2, quote: "ends on 28 February 2027"}
+      - {file: 06_contract_halden_retail.pdf, page: 2, quote: "No renewal has been agreed at the date of this copy."}
+
+  - id: D4
+    check: customer_concentration
+    on_list: true
+    finding: "One customer is 31.0% of FY2025 revenue. Same fact as V1, found by the red flag hunt."
+    evidence:
+      - {file: 05_customer_revenue_analysis.pdf, page: 2, quote: "Halden Retail Group | 11.22"}
+
+  - id: H1
+    check: other
+    on_list: false
+    finding: "The CFO resigned effective 30 September 2026, during the sale process."
+    evidence:
+      - {file: 11_board_minutes.pdf, page: 4, quote: "The board noted the resignation of Priya Raman, Chief Financial Officer, effective 30 September 2026."}
+
+  - id: H2
+    check: other
+    on_list: false
+    finding: "The London office is rented from a company the CEO owns, at $95 per square foot against a $60 market rent."
+    evidence:
+      - {file: 13_office_lease.pdf, page: 3, quote: "Calder Property Ltd is wholly owned by Daniel Okafor."}
+      - {file: 13_office_lease.pdf, page: 2, quote: "The rent is $95 per square foot per year"}
+      - {file: 13_office_lease.pdf, page: 3, quote: "market rent for comparable space at $60 per square foot per year"}
+
+# Checks on the list that should find nothing. A hit here is a false flag.
+expected_clear:
+  - check: unpaid_taxes
+    why: "The loan agreement states all taxes were paid when due. Nothing says otherwise."
+  - check: covenant_breach
+    why: "Net debt to EBITDA is 2.9x against a 3.5x limit (management accounts p.12)."

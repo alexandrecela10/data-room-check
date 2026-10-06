@@ -1,0 +1,98 @@
+# Single source of truth for the Fintech A data room.
+# Every document in data/room/ is generated from these values, so the files
+# agree with each other. The deck's own claims live under `deck:`; where they
+# differ from the true values below, that difference is a known issue in
+# eval/answer_key.yaml.
+#
+# Fintech A, its people, customers, lenders and every number are fictional.
+
+company:
+  name: Fintech A Ltd
+  activity: payments and reconciliation software for mid-size retailers
+  incorporated: 2014
+  offices: [London, Manchester, Dublin]
+  employees_avg_fy2025: 240
+  products: [FinPay, FinRecon, FinInsights]
+  ceo: Daniel Okafor
+  cfo: Priya Raman
+  chair: Helen Marsh
+
+deal:
+  lead_investor: Northgate Capital Partners
+  date: October 2026
+  equity_raise_musd: 60.0
+  stake_sold_pct: 30
+  co_investor: a family office
+
+fy2024:
+  revenue: 30.1
+  cost_of_sales: 9.9
+  gross_profit: 20.2
+  operating_expenses: 15.2
+  ebitda: 5.0
+
+fy2025:
+  revenue_audited: 36.2
+  revenue_management: 38.0       # includes a one-off fee the auditors deferred
+  one_off_fee: 1.8
+  cost_of_sales: 11.6
+  gross_profit: 24.6             # 24.6 / 36.2 = 68.0%
+  gross_margin_pct: 68.0
+  operating_expenses: 17.5
+  ebitda: 7.1
+  net_debt: 20.6
+  leverage_x: 2.9                # net debt / EBITDA
+  leverage_limit_x: 3.5
+
+customers:
+  active_end_fy2025: 372
+  cohort_start_fy2025: 340       # customers active on 1 Jan 2025
+  cohort_revenue_fy2024: 29.4
+  cohort_revenue_fy2025: 30.6    # 30.6 / 29.4 = 104.1% revenue kept
+  largest:
+    name: Halden Retail Group
+    revenue_fy2025: 11.22        # 11.22 / 36.2 = 31.0%
+    contract_end: 28 February 2027
+  others_top:                    # next 9 customers, FY2025 revenue in $M
+    - [Corvo Home Stores, 1.41]
+    - [Pellam Outdoor, 1.18]
+    - [Ashby & Lane, 0.97]
+    - [Mardale Foods, 0.88]
+    - [Kestrel Pharmacy, 0.81]
+    - [Tamsin Fashion, 0.74]
+    - [Orrin Hardware, 0.69]
+    - [Bellweather Books, 0.61]
+    - [Quarry Sports, 0.57]
+
+loan:
+  lender: Avonmore Bank plc
+  facility_musd: 25.0
+  margin: SONIA + 4.25%
+  maturity: 30 June 2029
+
+lease:
+  landlord: Calder Property Ltd
+  landlord_owner: Daniel Okafor
+  premises: 4th floor, 12 Wharf Street, London
+  area_sqft: 11000
+  rent_per_sqft: 95
+  market_rent_per_sqft: 60
+
+legal_claim:
+  claimant: Brightpay Partners Ltd
+  amount_musd: 2.1
+  law_firm: Hollis Grant LLP
+
+# What the seller's slides say. Values that differ from the facts above are
+# deliberate: they are the known issues the tool must catch.
+deck:
+  revenue_fy2025: 38.0           # audited says 36.2 (conflict with management accounts)
+  gross_margin_pct: 68           # correct
+  revenue_kept_pct: 115          # true value 104.1
+  customers: 410                 # true value 372
+  largest_customer_pct: 12       # true value 31.0
+  employees: 240                 # correct
+  incorporated: 2014             # correct
+  offices: 3                     # correct
+  products: 3                    # correct
+  loan_musd: 25.0                # correct

@@ -1,0 +1,3269 @@
+{
+  "model": "gemini-3.8-flash+gemini-embedding-2",
+  "prompt_version": "v2",
+  "files": [
+    "01_investor_presentation.pdf",
+    "02_audited_accounts_fy2024.pdf",
+    "03_audited_accounts_fy2025.pdf",
+    "04_management_accounts_fy2025.pdf",
+    "05_customer_revenue_analysis.pdf",
+    "06_contract_halden_retail.pdf",
+    "07_contract_corvo_home.pdf",
+    "08_contract_pellam_outdoor.pdf",
+    "09_senior_facility_agreement.pdf",
+    "10_shareholder_register.pdf",
+    "11_board_minutes.pdf",
+    "12_letter_hollis_grant.pdf",
+    "13_office_lease.pdf"
+  ],
+  "file_hashes": {
+    "01_investor_presentation.pdf": "3d240c1b6baabbfcac0c6c6c3a288e089bcbe2681d54539971b0dab5672a99d0",
+    "02_audited_accounts_fy2024.pdf": "3d0174ee7cb3e871c1da069d62ae4ae2cf7292675d0bc982c1f64da6d1010e73",
+    "03_audited_accounts_fy2025.pdf": "346800187617814c8554adc99a9838f40c89edff31f804d8cb26c642eef09958",
+    "04_management_accounts_fy2025.pdf": "9da03f8f7c336ac0150d575b7c2584a22eb0ff3c7aeec3b21b2693b160fbd02f",
+    "05_customer_revenue_analysis.pdf": "d0878d448f2dc57c006420a141c86d03a9cb99c9045caa733f6c348b8670a033",
+    "06_contract_halden_retail.pdf": "76623a16f37cd54868cf843c6f42ae9ce9943018ca8657c8fe3a3978ac829f60",
+    "07_contract_corvo_home.pdf": "ffc959d67da497191c84ce193e46805df55862fd136b4bb934061243c540a69e",
+    "08_contract_pellam_outdoor.pdf": "eab2a08d98107d0f501856ed2fc6134ede32f4d5ea523b843093e356fe3444e9",
+    "09_senior_facility_agreement.pdf": "89afb40db825f6d52fa14921f24962acf70390c2dbe55f3bf7fb8213fc779a4a",
+    "10_shareholder_register.pdf": "2a6a4c448e32c0ef7bb9df7c2a6133a5418d1f6f682808bdf2b2b5014fccc9db",
+    "11_board_minutes.pdf": "1c67932045bb58089b21a0ba1026d106f66bda92488d3f076d4d389003ad81a2",
+    "12_letter_hollis_grant.pdf": "2f34df88e6979bb8a097a63134bac0e9289cd4b1aa83b42a56e39d0ff10b3977",
+    "13_office_lease.pdf": "b0ef54bd1fa25de71a52b5e2414f5da7213722575042923354aa1e744307ca81"
+  },
+  "claims": [
+    {
+      "slide": 2,
+      "quote": "Founded in 2014.",
+      "metric": "Founding year",
+      "value": 2014,
+      "unit": "year",
+      "period": "",
+      "claim_id": "K1",
+      "slide_verified": true
+    },
+    {
+      "slide": 2,
+      "quote": "3 offices: London, Manchester, Dublin.",
+      "metric": "Office count",
+      "value": 3,
+      "unit": "count",
+      "period": "",
+      "claim_id": "K2",
+      "slide_verified": true
+    },
+    {
+      "slide": 4,
+      "quote": "Revenue FY2025: $38.0M.",
+      "metric": "Revenue",
+      "value": 38.0,
+      "unit": "$M",
+      "period": "FY2025",
+      "claim_id": "K3",
+      "slide_verified": true
+    },
+    {
+      "slide": 5,
+      "quote": "Gross margin: 68%.",
+      "metric": "Gross margin",
+      "value": 68,
+      "unit": "%",
+      "period": "",
+      "claim_id": "K4",
+      "slide_verified": true
+    },
+    {
+      "slide": 5,
+      "quote": "Net revenue retention: 115%.",
+      "metric": "Net revenue retention",
+      "value": 115,
+      "unit": "%",
+      "period": "",
+      "claim_id": "K5",
+      "slide_verified": true
+    },
+    {
+      "slide": 6,
+      "quote": "410 customers across the UK and Ireland.",
+      "metric": "Customer count",
+      "value": 410,
+      "unit": "count",
+      "period": "",
+      "claim_id": "K6",
+      "slide_verified": true
+    },
+    {
+      "slide": 6,
+      "quote": "Largest customer: 12% of revenue.",
+      "metric": "Largest customer share",
+      "value": 12,
+      "unit": "%",
+      "period": "",
+      "claim_id": "K7",
+      "slide_verified": true
+    },
+    {
+      "slide": 7,
+      "quote": "3 products: FinPay, FinRecon, FinInsights.",
+      "metric": "Product count",
+      "value": 3,
+      "unit": "count",
+      "period": "",
+      "claim_id": "K8",
+      "slide_verified": true
+    },
+    {
+      "slide": 8,
+      "quote": "240 employees.",
+      "metric": "Employee count",
+      "value": 240,
+      "unit": "count",
+      "period": "",
+      "claim_id": "K9",
+      "slide_verified": true
+    },
+    {
+      "slide": 9,
+      "quote": "Senior term loan: $25.0M.",
+      "metric": "Senior term loan",
+      "value": 25.0,
+      "unit": "$M",
+      "period": "",
+      "claim_id": "K10",
+      "slide_verified": true
+    }
+  ],
+  "results": {
+    "A": [
+      {
+        "slide": 2,
+        "quote": "Founded in 2014.",
+        "metric": "Founding year",
+        "value": 2014,
+        "unit": "year",
+        "period": "",
+        "claim_id": "K1",
+        "slide_verified": true,
+        "method": "A",
+        "retrieved": [
+          "02_audited_accounts_fy2024:p1:u1",
+          "02_audited_accounts_fy2024:p2:u1",
+          "02_audited_accounts_fy2024:p3:u1",
+          "03_audited_accounts_fy2025:p1:u1",
+          "03_audited_accounts_fy2025:p2:u1",
+          "03_audited_accounts_fy2025:p3:u1",
+          "03_audited_accounts_fy2025:p4:u1",
+          "03_audited_accounts_fy2025:p4:u2",
+          "04_management_accounts_fy2025:p1:u1",
+          "04_management_accounts_fy2025:p2:u1",
+          "04_management_accounts_fy2025:p3:u1",
+          "04_management_accounts_fy2025:p4:u1",
+          "04_management_accounts_fy2025:p5:u1",
+          "04_management_accounts_fy2025:p6:u1",
+          "04_management_accounts_fy2025:p7:u1",
+          "04_management_accounts_fy2025:p8:u1",
+          "04_management_accounts_fy2025:p9:u1",
+          "04_management_accounts_fy2025:p10:u1",
+          "04_management_accounts_fy2025:p11:u1",
+          "04_management_accounts_fy2025:p12:u1",
+          "04_management_accounts_fy2025:p12:u2",
+          "04_management_accounts_fy2025:p12:u3",
+          "05_customer_revenue_analysis:p1:u1",
+          "05_customer_revenue_analysis:p1:u2",
+          "05_customer_revenue_analysis:p2:u1",
+          "05_customer_revenue_analysis:p3:u1",
+          "06_contract_halden_retail:p1:u1",
+          "06_contract_halden_retail:p1:u2",
+          "06_contract_halden_retail:p2:u1",
+          "06_contract_halden_retail:p2:u2",
+          "06_contract_halden_retail:p3:u1",
+          "06_contract_halden_retail:p3:u2",
+          "07_contract_corvo_home:p1:u1",
+          "07_contract_corvo_home:p1:u2",
+          "07_contract_corvo_home:p2:u1",
+          "07_contract_corvo_home:p2:u2",
+          "07_contract_corvo_home:p3:u1",
+          "07_contract_corvo_home:p3:u2",
+          "08_contract_pellam_outdoor:p1:u1",
+          "08_contract_pellam_outdoor:p1:u2",
+          "08_contract_pellam_outdoor:p2:u1",
+          "08_contract_pellam_outdoor:p2:u2",
+          "08_contract_pellam_outdoor:p3:u1",
+          "08_contract_pellam_outdoor:p3:u2",
+          "09_senior_facility_agreement:p1:u1",
+          "09_senior_facility_agreement:p1:u2",
+          "09_senior_facility_agreement:p2:u1",
+          "09_senior_facility_agreement:p2:u2",
+          "09_senior_facility_agreement:p3:u1",
+          "09_senior_facility_agreement:p4:u1",
+          "09_senior_facility_agreement:p5:u1",
+          "10_shareholder_register:p1:u1",
+          "10_shareholder_register:p1:u2",
+          "11_board_minutes:p1:u1",
+          "11_board_minutes:p2:u1",
+          "11_board_minutes:p3:u1",
+          "11_board_minutes:p4:u1",
+          "12_letter_hollis_grant:p1:u1",
+          "12_letter_hollis_grant:p2:u1",
+          "13_office_lease:p1:u1",
+          "13_office_lease:p1:u2",
+          "13_office_lease:p2:u1",
+          "13_office_lease:p2:u2",
+          "13_office_lease:p3:u1"
+        ],
+        "retrieved_pages": [
+          [
+            "02_audited_accounts_fy2024.pdf",
+            1
+          ],
+          [
+            "02_audited_accounts_fy2024.pdf",
+            2
+          ],
+          [
+            "02_audited_accounts_fy2024.pdf",
+            3
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            1
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            2
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            3
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            4
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            1
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            2
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            3
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            4
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            5
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            6
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            7
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            8
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            9
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            10
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            11
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            12
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            1
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            2
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            3
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            1
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            2
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            3
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            1
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            2
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            3
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            1
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            2
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            3
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            1
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            2
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            3
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            4
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            5
+          ],
+          [
+            "10_shareholder_register.pdf",
+            1
+          ],
+          [
+            "11_board_minutes.pdf",
+            1
+          ],
+          [
+            "11_board_minutes.pdf",
+            2
+          ],
+          [
+            "11_board_minutes.pdf",
+            3
+          ],
+          [
+            "11_board_minutes.pdf",
+            4
+          ],
+          [
+            "12_letter_hollis_grant.pdf",
+            1
+          ],
+          [
+            "12_letter_hollis_grant.pdf",
+            2
+          ],
+          [
+            "13_office_lease.pdf",
+            1
+          ],
+          [
+            "13_office_lease.pdf",
+            2
+          ],
+          [
+            "13_office_lease.pdf",
+            3
+          ]
+        ],
+        "evidence": [
+          {
+            "unit_id": "03_audited_accounts_fy2025:p1:u1",
+            "quote": "The company was incorporated in England in 2014.",
+            "value": 2014,
+            "unit": "year",
+            "period": null,
+            "role": "direct",
+            "file": "03_audited_accounts_fy2025.pdf",
+            "page": 1,
+            "section_path": "Fintech A Ltd: Audited Financial Statements FY2025 > Directors' report",
+            "verified": true,
+            "reason": ""
+          }
+        ],
+        "computation": null,
+        "computed_value": null,
+        "status": "confirmed",
+        "label": "stated"
+      },
+      {
+        "slide": 2,
+        "quote": "3 offices: London, Manchester, Dublin.",
+        "metric": "Office count",
+        "value": 3,
+        "unit": "count",
+        "period": "",
+        "claim_id": "K2",
+        "slide_verified": true,
+        "method": "A",
+        "retrieved": [
+          "02_audited_accounts_fy2024:p1:u1",
+          "02_audited_accounts_fy2024:p2:u1",
+          "02_audited_accounts_fy2024:p3:u1",
+          "03_audited_accounts_fy2025:p1:u1",
+          "03_audited_accounts_fy2025:p2:u1",
+          "03_audited_accounts_fy2025:p3:u1",
+          "03_audited_accounts_fy2025:p4:u1",
+          "03_audited_accounts_fy2025:p4:u2",
+          "04_management_accounts_fy2025:p1:u1",
+          "04_management_accounts_fy2025:p2:u1",
+          "04_management_accounts_fy2025:p3:u1",
+          "04_management_accounts_fy2025:p4:u1",
+          "04_management_accounts_fy2025:p5:u1",
+          "04_management_accounts_fy2025:p6:u1",
+          "04_management_accounts_fy2025:p7:u1",
+          "04_management_accounts_fy2025:p8:u1",
+          "04_management_accounts_fy2025:p9:u1",
+          "04_management_accounts_fy2025:p10:u1",
+          "04_management_accounts_fy2025:p11:u1",
+          "04_management_accounts_fy2025:p12:u1",
+          "04_management_accounts_fy2025:p12:u2",
+          "04_management_accounts_fy2025:p12:u3",
+          "05_customer_revenue_analysis:p1:u1",
+          "05_customer_revenue_analysis:p1:u2",
+          "05_customer_revenue_analysis:p2:u1",
+          "05_customer_revenue_analysis:p3:u1",
+          "06_contract_halden_retail:p1:u1",
+          "06_contract_halden_retail:p1:u2",
+          "06_contract_halden_retail:p2:u1",
+          "06_contract_halden_retail:p2:u2",
+          "06_contract_halden_retail:p3:u1",
+          "06_contract_halden_retail:p3:u2",
+          "07_contract_corvo_home:p1:u1",
+          "07_contract_corvo_home:p1:u2",
+          "07_contract_corvo_home:p2:u1",
+          "07_contract_corvo_home:p2:u2",
+          "07_contract_corvo_home:p3:u1",
+          "07_contract_corvo_home:p3:u2",
+          "08_contract_pellam_outdoor:p1:u1",
+          "08_contract_pellam_outdoor:p1:u2",
+          "08_contract_pellam_outdoor:p2:u1",
+          "08_contract_pellam_outdoor:p2:u2",
+          "08_contract_pellam_outdoor:p3:u1",
+          "08_contract_pellam_outdoor:p3:u2",
+          "09_senior_facility_agreement:p1:u1",
+          "09_senior_facility_agreement:p1:u2",
+          "09_senior_facility_agreement:p2:u1",
+          "09_senior_facility_agreement:p2:u2",
+          "09_senior_facility_agreement:p3:u1",
+          "09_senior_facility_agreement:p4:u1",
+          "09_senior_facility_agreement:p5:u1",
+          "10_shareholder_register:p1:u1",
+          "10_shareholder_register:p1:u2",
+          "11_board_minutes:p1:u1",
+          "11_board_minutes:p2:u1",
+          "11_board_minutes:p3:u1",
+          "11_board_minutes:p4:u1",
+          "12_letter_hollis_grant:p1:u1",
+          "12_letter_hollis_grant:p2:u1",
+          "13_office_lease:p1:u1",
+          "13_office_lease:p1:u2",
+          "13_office_lease:p2:u1",
+          "13_office_lease:p2:u2",
+          "13_office_lease:p3:u1"
+        ],
+        "retrieved_pages": [
+          [
+            "02_audited_accounts_fy2024.pdf",
+            1
+          ],
+          [
+            "02_audited_accounts_fy2024.pdf",
+            2
+          ],
+          [
+            "02_audited_accounts_fy2024.pdf",
+            3
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            1
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            2
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            3
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            4
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            1
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            2
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            3
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            4
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            5
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            6
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            7
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            8
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            9
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            10
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            11
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            12
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            1
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            2
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            3
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            1
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            2
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            3
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            1
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            2
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            3
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            1
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            2
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            3
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            1
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            2
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            3
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            4
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            5
+          ],
+          [
+            "10_shareholder_register.pdf",
+            1
+          ],
+          [
+            "11_board_minutes.pdf",
+            1
+          ],
+          [
+            "11_board_minutes.pdf",
+            2
+          ],
+          [
+            "11_board_minutes.pdf",
+            3
+          ],
+          [
+            "11_board_minutes.pdf",
+            4
+          ],
+          [
+            "12_letter_hollis_grant.pdf",
+            1
+          ],
+          [
+            "12_letter_hollis_grant.pdf",
+            2
+          ],
+          [
+            "13_office_lease.pdf",
+            1
+          ],
+          [
+            "13_office_lease.pdf",
+            2
+          ],
+          [
+            "13_office_lease.pdf",
+            3
+          ]
+        ],
+        "evidence": [
+          {
+            "unit_id": "03_audited_accounts_fy2025:p1:u1",
+            "quote": "The company operates from 3 offices in London, Manchester, Dublin.",
+            "value": 3,
+            "unit": "count",
+            "period": "FY2025",
+            "role": "direct",
+            "file": "03_audited_accounts_fy2025.pdf",
+            "page": 1,
+            "section_path": "Fintech A Ltd: Audited Financial Statements FY2025 > Directors' report",
+            "verified": true,
+            "reason": ""
+          }
+        ],
+        "computation": null,
+        "computed_value": null,
+        "status": "confirmed",
+        "label": "stated"
+      },
+      {
+        "slide": 4,
+        "quote": "Revenue FY2025: $38.0M.",
+        "metric": "Revenue",
+        "value": 38.0,
+        "unit": "$M",
+        "period": "FY2025",
+        "claim_id": "K3",
+        "slide_verified": true,
+        "method": "A",
+        "retrieved": [
+          "02_audited_accounts_fy2024:p1:u1",
+          "02_audited_accounts_fy2024:p2:u1",
+          "02_audited_accounts_fy2024:p3:u1",
+          "03_audited_accounts_fy2025:p1:u1",
+          "03_audited_accounts_fy2025:p2:u1",
+          "03_audited_accounts_fy2025:p3:u1",
+          "03_audited_accounts_fy2025:p4:u1",
+          "03_audited_accounts_fy2025:p4:u2",
+          "04_management_accounts_fy2025:p1:u1",
+          "04_management_accounts_fy2025:p2:u1",
+          "04_management_accounts_fy2025:p3:u1",
+          "04_management_accounts_fy2025:p4:u1",
+          "04_management_accounts_fy2025:p5:u1",
+          "04_management_accounts_fy2025:p6:u1",
+          "04_management_accounts_fy2025:p7:u1",
+          "04_management_accounts_fy2025:p8:u1",
+          "04_management_accounts_fy2025:p9:u1",
+          "04_management_accounts_fy2025:p10:u1",
+          "04_management_accounts_fy2025:p11:u1",
+          "04_management_accounts_fy2025:p12:u1",
+          "04_management_accounts_fy2025:p12:u2",
+          "04_management_accounts_fy2025:p12:u3",
+          "05_customer_revenue_analysis:p1:u1",
+          "05_customer_revenue_analysis:p1:u2",
+          "05_customer_revenue_analysis:p2:u1",
+          "05_customer_revenue_analysis:p3:u1",
+          "06_contract_halden_retail:p1:u1",
+          "06_contract_halden_retail:p1:u2",
+          "06_contract_halden_retail:p2:u1",
+          "06_contract_halden_retail:p2:u2",
+          "06_contract_halden_retail:p3:u1",
+          "06_contract_halden_retail:p3:u2",
+          "07_contract_corvo_home:p1:u1",
+          "07_contract_corvo_home:p1:u2",
+          "07_contract_corvo_home:p2:u1",
+          "07_contract_corvo_home:p2:u2",
+          "07_contract_corvo_home:p3:u1",
+          "07_contract_corvo_home:p3:u2",
+          "08_contract_pellam_outdoor:p1:u1",
+          "08_contract_pellam_outdoor:p1:u2",
+          "08_contract_pellam_outdoor:p2:u1",
+          "08_contract_pellam_outdoor:p2:u2",
+          "08_contract_pellam_outdoor:p3:u1",
+          "08_contract_pellam_outdoor:p3:u2",
+          "09_senior_facility_agreement:p1:u1",
+          "09_senior_facility_agreement:p1:u2",
+          "09_senior_facility_agreement:p2:u1",
+          "09_senior_facility_agreement:p2:u2",
+          "09_senior_facility_agreement:p3:u1",
+          "09_senior_facility_agreement:p4:u1",
+          "09_senior_facility_agreement:p5:u1",
+          "10_shareholder_register:p1:u1",
+          "10_shareholder_register:p1:u2",
+          "11_board_minutes:p1:u1",
+          "11_board_minutes:p2:u1",
+          "11_board_minutes:p3:u1",
+          "11_board_minutes:p4:u1",
+          "12_letter_hollis_grant:p1:u1",
+          "12_letter_hollis_grant:p2:u1",
+          "13_office_lease:p1:u1",
+          "13_office_lease:p1:u2",
+          "13_office_lease:p2:u1",
+          "13_office_lease:p2:u2",
+          "13_office_lease:p3:u1"
+        ],
+        "retrieved_pages": [
+          [
+            "02_audited_accounts_fy2024.pdf",
+            1
+          ],
+          [
+            "02_audited_accounts_fy2024.pdf",
+            2
+          ],
+          [
+            "02_audited_accounts_fy2024.pdf",
+            3
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            1
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            2
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            3
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            4
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            1
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            2
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            3
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            4
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            5
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            6
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            7
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            8
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            9
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            10
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            11
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            12
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            1
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            2
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            3
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            1
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            2
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            3
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            1
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            2
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            3
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            1
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            2
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            3
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            1
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            2
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            3
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            4
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            5
+          ],
+          [
+            "10_shareholder_register.pdf",
+            1
+          ],
+          [
+            "11_board_minutes.pdf",
+            1
+          ],
+          [
+            "11_board_minutes.pdf",
+            2
+          ],
+          [
+            "11_board_minutes.pdf",
+            3
+          ],
+          [
+            "11_board_minutes.pdf",
+            4
+          ],
+          [
+            "12_letter_hollis_grant.pdf",
+            1
+          ],
+          [
+            "12_letter_hollis_grant.pdf",
+            2
+          ],
+          [
+            "13_office_lease.pdf",
+            1
+          ],
+          [
+            "13_office_lease.pdf",
+            2
+          ],
+          [
+            "13_office_lease.pdf",
+            3
+          ]
+        ],
+        "evidence": [
+          {
+            "unit_id": "03_audited_accounts_fy2025:p3:u1",
+            "quote": "Line ($M) | FY2025 ; Revenue | 36.2",
+            "value": 36.2,
+            "unit": "$M",
+            "period": "FY2025",
+            "role": "direct",
+            "file": "03_audited_accounts_fy2025.pdf",
+            "page": 3,
+            "section_path": "Fintech A Ltd: Audited Financial Statements FY2025 > Income statement",
+            "verified": true,
+            "reason": ""
+          },
+          {
+            "unit_id": "04_management_accounts_fy2025:p12:u1",
+            "quote": "Line ($M) | Month | Year to date ; Revenue | 4.82 | 38.00",
+            "value": 38.0,
+            "unit": "$M",
+            "period": "FY2025",
+            "role": "direct",
+            "file": "04_management_accounts_fy2025.pdf",
+            "page": 12,
+            "section_path": "Fintech A Ltd: Management Accounts FY2025 > December 2025",
+            "verified": true,
+            "reason": ""
+          },
+          {
+            "unit_id": "04_management_accounts_fy2025:p12:u2",
+            "quote": "Total revenue FY2025: $38.0M, including a one-off implementation fee of $1.8M from Halden Retail Group.",
+            "value": 38.0,
+            "unit": "$M",
+            "period": "FY2025",
+            "role": "direct",
+            "file": "04_management_accounts_fy2025.pdf",
+            "page": 12,
+            "section_path": "Fintech A Ltd: Management Accounts FY2025 > Full year summary",
+            "verified": true,
+            "reason": ""
+          },
+          {
+            "unit_id": "05_customer_revenue_analysis:p2:u1",
+            "quote": "Total | 36.20",
+            "value": 36.2,
+            "unit": "$M",
+            "period": "FY2025",
+            "role": "direct",
+            "file": "05_customer_revenue_analysis.pdf",
+            "page": 2,
+            "section_path": "Fintech A Ltd: Customer Revenue Analysis FY2024 to FY2025 > Top 10 customers by revenue",
+            "verified": true,
+            "reason": ""
+          }
+        ],
+        "computation": null,
+        "computed_value": null,
+        "status": "conflict",
+        "label": "stated"
+      },
+      {
+        "slide": 5,
+        "quote": "Gross margin: 68%.",
+        "metric": "Gross margin",
+        "value": 68,
+        "unit": "%",
+        "period": "",
+        "claim_id": "K4",
+        "slide_verified": true,
+        "method": "A",
+        "retrieved": [
+          "02_audited_accounts_fy2024:p1:u1",
+          "02_audited_accounts_fy2024:p2:u1",
+          "02_audited_accounts_fy2024:p3:u1",
+          "03_audited_accounts_fy2025:p1:u1",
+          "03_audited_accounts_fy2025:p2:u1",
+          "03_audited_accounts_fy2025:p3:u1",
+          "03_audited_accounts_fy2025:p4:u1",
+          "03_audited_accounts_fy2025:p4:u2",
+          "04_management_accounts_fy2025:p1:u1",
+          "04_management_accounts_fy2025:p2:u1",
+          "04_management_accounts_fy2025:p3:u1",
+          "04_management_accounts_fy2025:p4:u1",
+          "04_management_accounts_fy2025:p5:u1",
+          "04_management_accounts_fy2025:p6:u1",
+          "04_management_accounts_fy2025:p7:u1",
+          "04_management_accounts_fy2025:p8:u1",
+          "04_management_accounts_fy2025:p9:u1",
+          "04_management_accounts_fy2025:p10:u1",
+          "04_management_accounts_fy2025:p11:u1",
+          "04_management_accounts_fy2025:p12:u1",
+          "04_management_accounts_fy2025:p12:u2",
+          "04_management_accounts_fy2025:p12:u3",
+          "05_customer_revenue_analysis:p1:u1",
+          "05_customer_revenue_analysis:p1:u2",
+          "05_customer_revenue_analysis:p2:u1",
+          "05_customer_revenue_analysis:p3:u1",
+          "06_contract_halden_retail:p1:u1",
+          "06_contract_halden_retail:p1:u2",
+          "06_contract_halden_retail:p2:u1",
+          "06_contract_halden_retail:p2:u2",
+          "06_contract_halden_retail:p3:u1",
+          "06_contract_halden_retail:p3:u2",
+          "07_contract_corvo_home:p1:u1",
+          "07_contract_corvo_home:p1:u2",
+          "07_contract_corvo_home:p2:u1",
+          "07_contract_corvo_home:p2:u2",
+          "07_contract_corvo_home:p3:u1",
+          "07_contract_corvo_home:p3:u2",
+          "08_contract_pellam_outdoor:p1:u1",
+          "08_contract_pellam_outdoor:p1:u2",
+          "08_contract_pellam_outdoor:p2:u1",
+          "08_contract_pellam_outdoor:p2:u2",
+          "08_contract_pellam_outdoor:p3:u1",
+          "08_contract_pellam_outdoor:p3:u2",
+          "09_senior_facility_agreement:p1:u1",
+          "09_senior_facility_agreement:p1:u2",
+          "09_senior_facility_agreement:p2:u1",
+          "09_senior_facility_agreement:p2:u2",
+          "09_senior_facility_agreement:p3:u1",
+          "09_senior_facility_agreement:p4:u1",
+          "09_senior_facility_agreement:p5:u1",
+          "10_shareholder_register:p1:u1",
+          "10_shareholder_register:p1:u2",
+          "11_board_minutes:p1:u1",
+          "11_board_minutes:p2:u1",
+          "11_board_minutes:p3:u1",
+          "11_board_minutes:p4:u1",
+          "12_letter_hollis_grant:p1:u1",
+          "12_letter_hollis_grant:p2:u1",
+          "13_office_lease:p1:u1",
+          "13_office_lease:p1:u2",
+          "13_office_lease:p2:u1",
+          "13_office_lease:p2:u2",
+          "13_office_lease:p3:u1"
+        ],
+        "retrieved_pages": [
+          [
+            "02_audited_accounts_fy2024.pdf",
+            1
+          ],
+          [
+            "02_audited_accounts_fy2024.pdf",
+            2
+          ],
+          [
+            "02_audited_accounts_fy2024.pdf",
+            3
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            1
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            2
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            3
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            4
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            1
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            2
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            3
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            4
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            5
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            6
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            7
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            8
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            9
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            10
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            11
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            12
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            1
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            2
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            3
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            1
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            2
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            3
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            1
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            2
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            3
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            1
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            2
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            3
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            1
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            2
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            3
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            4
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            5
+          ],
+          [
+            "10_shareholder_register.pdf",
+            1
+          ],
+          [
+            "11_board_minutes.pdf",
+            1
+          ],
+          [
+            "11_board_minutes.pdf",
+            2
+          ],
+          [
+            "11_board_minutes.pdf",
+            3
+          ],
+          [
+            "11_board_minutes.pdf",
+            4
+          ],
+          [
+            "12_letter_hollis_grant.pdf",
+            1
+          ],
+          [
+            "12_letter_hollis_grant.pdf",
+            2
+          ],
+          [
+            "13_office_lease.pdf",
+            1
+          ],
+          [
+            "13_office_lease.pdf",
+            2
+          ],
+          [
+            "13_office_lease.pdf",
+            3
+          ]
+        ],
+        "evidence": [
+          {
+            "unit_id": "03_audited_accounts_fy2025:p4:u1",
+            "quote": "Gross margin for FY2025 was 68.0%.",
+            "value": 68.0,
+            "unit": "%",
+            "period": "FY2025",
+            "role": "direct",
+            "file": "03_audited_accounts_fy2025.pdf",
+            "page": 4,
+            "section_path": "Fintech A Ltd: Audited Financial Statements FY2025 > Note 3: Key ratios",
+            "verified": true,
+            "reason": ""
+          }
+        ],
+        "computation": null,
+        "computed_value": null,
+        "status": "confirmed",
+        "label": "stated"
+      },
+      {
+        "slide": 5,
+        "quote": "Net revenue retention: 115%.",
+        "metric": "Net revenue retention",
+        "value": 115,
+        "unit": "%",
+        "period": "",
+        "claim_id": "K5",
+        "slide_verified": true,
+        "method": "A",
+        "retrieved": [
+          "02_audited_accounts_fy2024:p1:u1",
+          "02_audited_accounts_fy2024:p2:u1",
+          "02_audited_accounts_fy2024:p3:u1",
+          "03_audited_accounts_fy2025:p1:u1",
+          "03_audited_accounts_fy2025:p2:u1",
+          "03_audited_accounts_fy2025:p3:u1",
+          "03_audited_accounts_fy2025:p4:u1",
+          "03_audited_accounts_fy2025:p4:u2",
+          "04_management_accounts_fy2025:p1:u1",
+          "04_management_accounts_fy2025:p2:u1",
+          "04_management_accounts_fy2025:p3:u1",
+          "04_management_accounts_fy2025:p4:u1",
+          "04_management_accounts_fy2025:p5:u1",
+          "04_management_accounts_fy2025:p6:u1",
+          "04_management_accounts_fy2025:p7:u1",
+          "04_management_accounts_fy2025:p8:u1",
+          "04_management_accounts_fy2025:p9:u1",
+          "04_management_accounts_fy2025:p10:u1",
+          "04_management_accounts_fy2025:p11:u1",
+          "04_management_accounts_fy2025:p12:u1",
+          "04_management_accounts_fy2025:p12:u2",
+          "04_management_accounts_fy2025:p12:u3",
+          "05_customer_revenue_analysis:p1:u1",
+          "05_customer_revenue_analysis:p1:u2",
+          "05_customer_revenue_analysis:p2:u1",
+          "05_customer_revenue_analysis:p3:u1",
+          "06_contract_halden_retail:p1:u1",
+          "06_contract_halden_retail:p1:u2",
+          "06_contract_halden_retail:p2:u1",
+          "06_contract_halden_retail:p2:u2",
+          "06_contract_halden_retail:p3:u1",
+          "06_contract_halden_retail:p3:u2",
+          "07_contract_corvo_home:p1:u1",
+          "07_contract_corvo_home:p1:u2",
+          "07_contract_corvo_home:p2:u1",
+          "07_contract_corvo_home:p2:u2",
+          "07_contract_corvo_home:p3:u1",
+          "07_contract_corvo_home:p3:u2",
+          "08_contract_pellam_outdoor:p1:u1",
+          "08_contract_pellam_outdoor:p1:u2",
+          "08_contract_pellam_outdoor:p2:u1",
+          "08_contract_pellam_outdoor:p2:u2",
+          "08_contract_pellam_outdoor:p3:u1",
+          "08_contract_pellam_outdoor:p3:u2",
+          "09_senior_facility_agreement:p1:u1",
+          "09_senior_facility_agreement:p1:u2",
+          "09_senior_facility_agreement:p2:u1",
+          "09_senior_facility_agreement:p2:u2",
+          "09_senior_facility_agreement:p3:u1",
+          "09_senior_facility_agreement:p4:u1",
+          "09_senior_facility_agreement:p5:u1",
+          "10_shareholder_register:p1:u1",
+          "10_shareholder_register:p1:u2",
+          "11_board_minutes:p1:u1",
+          "11_board_minutes:p2:u1",
+          "11_board_minutes:p3:u1",
+          "11_board_minutes:p4:u1",
+          "12_letter_hollis_grant:p1:u1",
+          "12_letter_hollis_grant:p2:u1",
+          "13_office_lease:p1:u1",
+          "13_office_lease:p1:u2",
+          "13_office_lease:p2:u1",
+          "13_office_lease:p2:u2",
+          "13_office_lease:p3:u1"
+        ],
+        "retrieved_pages": [
+          [
+            "02_audited_accounts_fy2024.pdf",
+            1
+          ],
+          [
+            "02_audited_accounts_fy2024.pdf",
+            2
+          ],
+          [
+            "02_audited_accounts_fy2024.pdf",
+            3
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            1
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            2
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            3
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            4
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            1
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            2
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            3
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            4
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            5
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            6
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            7
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            8
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            9
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            10
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            11
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            12
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            1
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            2
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            3
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            1
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            2
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            3
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            1
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            2
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            3
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            1
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            2
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            3
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            1
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            2
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            3
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            4
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            5
+          ],
+          [
+            "10_shareholder_register.pdf",
+            1
+          ],
+          [
+            "11_board_minutes.pdf",
+            1
+          ],
+          [
+            "11_board_minutes.pdf",
+            2
+          ],
+          [
+            "11_board_minutes.pdf",
+            3
+          ],
+          [
+            "11_board_minutes.pdf",
+            4
+          ],
+          [
+            "12_letter_hollis_grant.pdf",
+            1
+          ],
+          [
+            "12_letter_hollis_grant.pdf",
+            2
+          ],
+          [
+            "13_office_lease.pdf",
+            1
+          ],
+          [
+            "13_office_lease.pdf",
+            2
+          ],
+          [
+            "13_office_lease.pdf",
+            3
+          ]
+        ],
+        "evidence": [
+          {
+            "unit_id": "05_customer_revenue_analysis:p1:u2",
+            "quote": "Their revenue FY2025 ($M) | 30.6",
+            "value": 30.6,
+            "unit": "$M",
+            "period": "FY2025",
+            "role": "operand",
+            "file": "05_customer_revenue_analysis.pdf",
+            "page": 1,
+            "section_path": "Fintech A Ltd: Customer Revenue Analysis FY2024 to FY2025 > Summary",
+            "verified": true,
+            "reason": ""
+          },
+          {
+            "unit_id": "05_customer_revenue_analysis:p1:u2",
+            "quote": "Their revenue FY2024 ($M) | 29.4",
+            "value": 29.4,
+            "unit": "$M",
+            "period": "FY2024",
+            "role": "operand",
+            "file": "05_customer_revenue_analysis.pdf",
+            "page": 1,
+            "section_path": "Fintech A Ltd: Customer Revenue Analysis FY2024 to FY2025 > Summary",
+            "verified": true,
+            "reason": ""
+          }
+        ],
+        "computation": {
+          "op": "ratio_pct",
+          "numerator": 0,
+          "denominator": 1
+        },
+        "computed_value": 104.1,
+        "status": "contradicted",
+        "label": "computed"
+      },
+      {
+        "slide": 6,
+        "quote": "410 customers across the UK and Ireland.",
+        "metric": "Customer count",
+        "value": 410,
+        "unit": "count",
+        "period": "",
+        "claim_id": "K6",
+        "slide_verified": true,
+        "method": "A",
+        "retrieved": [
+          "02_audited_accounts_fy2024:p1:u1",
+          "02_audited_accounts_fy2024:p2:u1",
+          "02_audited_accounts_fy2024:p3:u1",
+          "03_audited_accounts_fy2025:p1:u1",
+          "03_audited_accounts_fy2025:p2:u1",
+          "03_audited_accounts_fy2025:p3:u1",
+          "03_audited_accounts_fy2025:p4:u1",
+          "03_audited_accounts_fy2025:p4:u2",
+          "04_management_accounts_fy2025:p1:u1",
+          "04_management_accounts_fy2025:p2:u1",
+          "04_management_accounts_fy2025:p3:u1",
+          "04_management_accounts_fy2025:p4:u1",
+          "04_management_accounts_fy2025:p5:u1",
+          "04_management_accounts_fy2025:p6:u1",
+          "04_management_accounts_fy2025:p7:u1",
+          "04_management_accounts_fy2025:p8:u1",
+          "04_management_accounts_fy2025:p9:u1",
+          "04_management_accounts_fy2025:p10:u1",
+          "04_management_accounts_fy2025:p11:u1",
+          "04_management_accounts_fy2025:p12:u1",
+          "04_management_accounts_fy2025:p12:u2",
+          "04_management_accounts_fy2025:p12:u3",
+          "05_customer_revenue_analysis:p1:u1",
+          "05_customer_revenue_analysis:p1:u2",
+          "05_customer_revenue_analysis:p2:u1",
+          "05_customer_revenue_analysis:p3:u1",
+          "06_contract_halden_retail:p1:u1",
+          "06_contract_halden_retail:p1:u2",
+          "06_contract_halden_retail:p2:u1",
+          "06_contract_halden_retail:p2:u2",
+          "06_contract_halden_retail:p3:u1",
+          "06_contract_halden_retail:p3:u2",
+          "07_contract_corvo_home:p1:u1",
+          "07_contract_corvo_home:p1:u2",
+          "07_contract_corvo_home:p2:u1",
+          "07_contract_corvo_home:p2:u2",
+          "07_contract_corvo_home:p3:u1",
+          "07_contract_corvo_home:p3:u2",
+          "08_contract_pellam_outdoor:p1:u1",
+          "08_contract_pellam_outdoor:p1:u2",
+          "08_contract_pellam_outdoor:p2:u1",
+          "08_contract_pellam_outdoor:p2:u2",
+          "08_contract_pellam_outdoor:p3:u1",
+          "08_contract_pellam_outdoor:p3:u2",
+          "09_senior_facility_agreement:p1:u1",
+          "09_senior_facility_agreement:p1:u2",
+          "09_senior_facility_agreement:p2:u1",
+          "09_senior_facility_agreement:p2:u2",
+          "09_senior_facility_agreement:p3:u1",
+          "09_senior_facility_agreement:p4:u1",
+          "09_senior_facility_agreement:p5:u1",
+          "10_shareholder_register:p1:u1",
+          "10_shareholder_register:p1:u2",
+          "11_board_minutes:p1:u1",
+          "11_board_minutes:p2:u1",
+          "11_board_minutes:p3:u1",
+          "11_board_minutes:p4:u1",
+          "12_letter_hollis_grant:p1:u1",
+          "12_letter_hollis_grant:p2:u1",
+          "13_office_lease:p1:u1",
+          "13_office_lease:p1:u2",
+          "13_office_lease:p2:u1",
+          "13_office_lease:p2:u2",
+          "13_office_lease:p3:u1"
+        ],
+        "retrieved_pages": [
+          [
+            "02_audited_accounts_fy2024.pdf",
+            1
+          ],
+          [
+            "02_audited_accounts_fy2024.pdf",
+            2
+          ],
+          [
+            "02_audited_accounts_fy2024.pdf",
+            3
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            1
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            2
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            3
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            4
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            1
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            2
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            3
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            4
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            5
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            6
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            7
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            8
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            9
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            10
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            11
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            12
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            1
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            2
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            3
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            1
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            2
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            3
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            1
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            2
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            3
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            1
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            2
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            3
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            1
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            2
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            3
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            4
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            5
+          ],
+          [
+            "10_shareholder_register.pdf",
+            1
+          ],
+          [
+            "11_board_minutes.pdf",
+            1
+          ],
+          [
+            "11_board_minutes.pdf",
+            2
+          ],
+          [
+            "11_board_minutes.pdf",
+            3
+          ],
+          [
+            "11_board_minutes.pdf",
+            4
+          ],
+          [
+            "12_letter_hollis_grant.pdf",
+            1
+          ],
+          [
+            "12_letter_hollis_grant.pdf",
+            2
+          ],
+          [
+            "13_office_lease.pdf",
+            1
+          ],
+          [
+            "13_office_lease.pdf",
+            2
+          ],
+          [
+            "13_office_lease.pdf",
+            3
+          ]
+        ],
+        "evidence": [
+          {
+            "unit_id": "05_customer_revenue_analysis:p1:u1",
+            "quote": "Active customers at 31 December 2025: 372.",
+            "value": 372,
+            "unit": "count",
+            "period": "31 December 2025",
+            "role": "direct",
+            "file": "05_customer_revenue_analysis.pdf",
+            "page": 1,
+            "section_path": "Fintech A Ltd: Customer Revenue Analysis FY2024 to FY2025 > Summary",
+            "verified": true,
+            "reason": ""
+          }
+        ],
+        "computation": null,
+        "computed_value": null,
+        "status": "contradicted",
+        "label": "stated"
+      },
+      {
+        "slide": 6,
+        "quote": "Largest customer: 12% of revenue.",
+        "metric": "Largest customer share",
+        "value": 12,
+        "unit": "%",
+        "period": "",
+        "claim_id": "K7",
+        "slide_verified": true,
+        "method": "A",
+        "retrieved": [
+          "02_audited_accounts_fy2024:p1:u1",
+          "02_audited_accounts_fy2024:p2:u1",
+          "02_audited_accounts_fy2024:p3:u1",
+          "03_audited_accounts_fy2025:p1:u1",
+          "03_audited_accounts_fy2025:p2:u1",
+          "03_audited_accounts_fy2025:p3:u1",
+          "03_audited_accounts_fy2025:p4:u1",
+          "03_audited_accounts_fy2025:p4:u2",
+          "04_management_accounts_fy2025:p1:u1",
+          "04_management_accounts_fy2025:p2:u1",
+          "04_management_accounts_fy2025:p3:u1",
+          "04_management_accounts_fy2025:p4:u1",
+          "04_management_accounts_fy2025:p5:u1",
+          "04_management_accounts_fy2025:p6:u1",
+          "04_management_accounts_fy2025:p7:u1",
+          "04_management_accounts_fy2025:p8:u1",
+          "04_management_accounts_fy2025:p9:u1",
+          "04_management_accounts_fy2025:p10:u1",
+          "04_management_accounts_fy2025:p11:u1",
+          "04_management_accounts_fy2025:p12:u1",
+          "04_management_accounts_fy2025:p12:u2",
+          "04_management_accounts_fy2025:p12:u3",
+          "05_customer_revenue_analysis:p1:u1",
+          "05_customer_revenue_analysis:p1:u2",
+          "05_customer_revenue_analysis:p2:u1",
+          "05_customer_revenue_analysis:p3:u1",
+          "06_contract_halden_retail:p1:u1",
+          "06_contract_halden_retail:p1:u2",
+          "06_contract_halden_retail:p2:u1",
+          "06_contract_halden_retail:p2:u2",
+          "06_contract_halden_retail:p3:u1",
+          "06_contract_halden_retail:p3:u2",
+          "07_contract_corvo_home:p1:u1",
+          "07_contract_corvo_home:p1:u2",
+          "07_contract_corvo_home:p2:u1",
+          "07_contract_corvo_home:p2:u2",
+          "07_contract_corvo_home:p3:u1",
+          "07_contract_corvo_home:p3:u2",
+          "08_contract_pellam_outdoor:p1:u1",
+          "08_contract_pellam_outdoor:p1:u2",
+          "08_contract_pellam_outdoor:p2:u1",
+          "08_contract_pellam_outdoor:p2:u2",
+          "08_contract_pellam_outdoor:p3:u1",
+          "08_contract_pellam_outdoor:p3:u2",
+          "09_senior_facility_agreement:p1:u1",
+          "09_senior_facility_agreement:p1:u2",
+          "09_senior_facility_agreement:p2:u1",
+          "09_senior_facility_agreement:p2:u2",
+          "09_senior_facility_agreement:p3:u1",
+          "09_senior_facility_agreement:p4:u1",
+          "09_senior_facility_agreement:p5:u1",
+          "10_shareholder_register:p1:u1",
+          "10_shareholder_register:p1:u2",
+          "11_board_minutes:p1:u1",
+          "11_board_minutes:p2:u1",
+          "11_board_minutes:p3:u1",
+          "11_board_minutes:p4:u1",
+          "12_letter_hollis_grant:p1:u1",
+          "12_letter_hollis_grant:p2:u1",
+          "13_office_lease:p1:u1",
+          "13_office_lease:p1:u2",
+          "13_office_lease:p2:u1",
+          "13_office_lease:p2:u2",
+          "13_office_lease:p3:u1"
+        ],
+        "retrieved_pages": [
+          [
+            "02_audited_accounts_fy2024.pdf",
+            1
+          ],
+          [
+            "02_audited_accounts_fy2024.pdf",
+            2
+          ],
+          [
+            "02_audited_accounts_fy2024.pdf",
+            3
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            1
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            2
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            3
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            4
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            1
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            2
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            3
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            4
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            5
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            6
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            7
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            8
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            9
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            10
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            11
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            12
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            1
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            2
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            3
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            1
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            2
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            3
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            1
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            2
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            3
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            1
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            2
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            3
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            1
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            2
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            3
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            4
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            5
+          ],
+          [
+            "10_shareholder_register.pdf",
+            1
+          ],
+          [
+            "11_board_minutes.pdf",
+            1
+          ],
+          [
+            "11_board_minutes.pdf",
+            2
+          ],
+          [
+            "11_board_minutes.pdf",
+            3
+          ],
+          [
+            "11_board_minutes.pdf",
+            4
+          ],
+          [
+            "12_letter_hollis_grant.pdf",
+            1
+          ],
+          [
+            "12_letter_hollis_grant.pdf",
+            2
+          ],
+          [
+            "13_office_lease.pdf",
+            1
+          ],
+          [
+            "13_office_lease.pdf",
+            2
+          ],
+          [
+            "13_office_lease.pdf",
+            3
+          ]
+        ],
+        "evidence": [
+          {
+            "unit_id": "05_customer_revenue_analysis:p2:u1",
+            "quote": "Halden Retail Group | 11.22",
+            "value": 11.22,
+            "unit": "$M",
+            "period": "FY2025",
+            "role": "operand",
+            "file": "05_customer_revenue_analysis.pdf",
+            "page": 2,
+            "section_path": "Fintech A Ltd: Customer Revenue Analysis FY2024 to FY2025 > Top 10 customers by revenue",
+            "verified": true,
+            "reason": ""
+          },
+          {
+            "unit_id": "05_customer_revenue_analysis:p2:u1",
+            "quote": "Total | 36.20",
+            "value": 36.2,
+            "unit": "$M",
+            "period": "FY2025",
+            "role": "operand",
+            "file": "05_customer_revenue_analysis.pdf",
+            "page": 2,
+            "section_path": "Fintech A Ltd: Customer Revenue Analysis FY2024 to FY2025 > Top 10 customers by revenue",
+            "verified": true,
+            "reason": ""
+          }
+        ],
+        "computation": {
+          "op": "ratio_pct",
+          "numerator": 0,
+          "denominator": 1
+        },
+        "computed_value": 31.0,
+        "status": "contradicted",
+        "label": "computed"
+      },
+      {
+        "slide": 7,
+        "quote": "3 products: FinPay, FinRecon, FinInsights.",
+        "metric": "Product count",
+        "value": 3,
+        "unit": "count",
+        "period": "",
+        "claim_id": "K8",
+        "slide_verified": true,
+        "method": "A",
+        "retrieved": [
+          "02_audited_accounts_fy2024:p1:u1",
+          "02_audited_accounts_fy2024:p2:u1",
+          "02_audited_accounts_fy2024:p3:u1",
+          "03_audited_accounts_fy2025:p1:u1",
+          "03_audited_accounts_fy2025:p2:u1",
+          "03_audited_accounts_fy2025:p3:u1",
+          "03_audited_accounts_fy2025:p4:u1",
+          "03_audited_accounts_fy2025:p4:u2",
+          "04_management_accounts_fy2025:p1:u1",
+          "04_management_accounts_fy2025:p2:u1",
+          "04_management_accounts_fy2025:p3:u1",
+          "04_management_accounts_fy2025:p4:u1",
+          "04_management_accounts_fy2025:p5:u1",
+          "04_management_accounts_fy2025:p6:u1",
+          "04_management_accounts_fy2025:p7:u1",
+          "04_management_accounts_fy2025:p8:u1",
+          "04_management_accounts_fy2025:p9:u1",
+          "04_management_accounts_fy2025:p10:u1",
+          "04_management_accounts_fy2025:p11:u1",
+          "04_management_accounts_fy2025:p12:u1",
+          "04_management_accounts_fy2025:p12:u2",
+          "04_management_accounts_fy2025:p12:u3",
+          "05_customer_revenue_analysis:p1:u1",
+          "05_customer_revenue_analysis:p1:u2",
+          "05_customer_revenue_analysis:p2:u1",
+          "05_customer_revenue_analysis:p3:u1",
+          "06_contract_halden_retail:p1:u1",
+          "06_contract_halden_retail:p1:u2",
+          "06_contract_halden_retail:p2:u1",
+          "06_contract_halden_retail:p2:u2",
+          "06_contract_halden_retail:p3:u1",
+          "06_contract_halden_retail:p3:u2",
+          "07_contract_corvo_home:p1:u1",
+          "07_contract_corvo_home:p1:u2",
+          "07_contract_corvo_home:p2:u1",
+          "07_contract_corvo_home:p2:u2",
+          "07_contract_corvo_home:p3:u1",
+          "07_contract_corvo_home:p3:u2",
+          "08_contract_pellam_outdoor:p1:u1",
+          "08_contract_pellam_outdoor:p1:u2",
+          "08_contract_pellam_outdoor:p2:u1",
+          "08_contract_pellam_outdoor:p2:u2",
+          "08_contract_pellam_outdoor:p3:u1",
+          "08_contract_pellam_outdoor:p3:u2",
+          "09_senior_facility_agreement:p1:u1",
+          "09_senior_facility_agreement:p1:u2",
+          "09_senior_facility_agreement:p2:u1",
+          "09_senior_facility_agreement:p2:u2",
+          "09_senior_facility_agreement:p3:u1",
+          "09_senior_facility_agreement:p4:u1",
+          "09_senior_facility_agreement:p5:u1",
+          "10_shareholder_register:p1:u1",
+          "10_shareholder_register:p1:u2",
+          "11_board_minutes:p1:u1",
+          "11_board_minutes:p2:u1",
+          "11_board_minutes:p3:u1",
+          "11_board_minutes:p4:u1",
+          "12_letter_hollis_grant:p1:u1",
+          "12_letter_hollis_grant:p2:u1",
+          "13_office_lease:p1:u1",
+          "13_office_lease:p1:u2",
+          "13_office_lease:p2:u1",
+          "13_office_lease:p2:u2",
+          "13_office_lease:p3:u1"
+        ],
+        "retrieved_pages": [
+          [
+            "02_audited_accounts_fy2024.pdf",
+            1
+          ],
+          [
+            "02_audited_accounts_fy2024.pdf",
+            2
+          ],
+          [
+            "02_audited_accounts_fy2024.pdf",
+            3
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            1
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            2
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            3
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            4
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            1
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            2
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            3
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            4
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            5
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            6
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            7
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            8
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            9
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            10
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            11
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            12
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            1
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            2
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            3
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            1
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            2
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            3
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            1
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            2
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            3
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            1
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            2
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            3
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            1
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            2
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            3
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            4
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            5
+          ],
+          [
+            "10_shareholder_register.pdf",
+            1
+          ],
+          [
+            "11_board_minutes.pdf",
+            1
+          ],
+          [
+            "11_board_minutes.pdf",
+            2
+          ],
+          [
+            "11_board_minutes.pdf",
+            3
+          ],
+          [
+            "11_board_minutes.pdf",
+            4
+          ],
+          [
+            "12_letter_hollis_grant.pdf",
+            1
+          ],
+          [
+            "12_letter_hollis_grant.pdf",
+            2
+          ],
+          [
+            "13_office_lease.pdf",
+            1
+          ],
+          [
+            "13_office_lease.pdf",
+            2
+          ],
+          [
+            "13_office_lease.pdf",
+            3
+          ]
+        ],
+        "evidence": [
+          {
+            "unit_id": "03_audited_accounts_fy2025:p1:u1",
+            "quote": "The company sells three products: FinPay, FinRecon, FinInsights.",
+            "value": 3,
+            "unit": "count",
+            "period": "FY2025",
+            "role": "direct",
+            "file": "03_audited_accounts_fy2025.pdf",
+            "page": 1,
+            "section_path": "Fintech A Ltd: Audited Financial Statements FY2025 > Directors' report",
+            "verified": true,
+            "reason": ""
+          }
+        ],
+        "computation": null,
+        "computed_value": null,
+        "status": "confirmed",
+        "label": "stated"
+      },
+      {
+        "slide": 8,
+        "quote": "240 employees.",
+        "metric": "Employee count",
+        "value": 240,
+        "unit": "count",
+        "period": "",
+        "claim_id": "K9",
+        "slide_verified": true,
+        "method": "A",
+        "retrieved": [
+          "02_audited_accounts_fy2024:p1:u1",
+          "02_audited_accounts_fy2024:p2:u1",
+          "02_audited_accounts_fy2024:p3:u1",
+          "03_audited_accounts_fy2025:p1:u1",
+          "03_audited_accounts_fy2025:p2:u1",
+          "03_audited_accounts_fy2025:p3:u1",
+          "03_audited_accounts_fy2025:p4:u1",
+          "03_audited_accounts_fy2025:p4:u2",
+          "04_management_accounts_fy2025:p1:u1",
+          "04_management_accounts_fy2025:p2:u1",
+          "04_management_accounts_fy2025:p3:u1",
+          "04_management_accounts_fy2025:p4:u1",
+          "04_management_accounts_fy2025:p5:u1",
+          "04_management_accounts_fy2025:p6:u1",
+          "04_management_accounts_fy2025:p7:u1",
+          "04_management_accounts_fy2025:p8:u1",
+          "04_management_accounts_fy2025:p9:u1",
+          "04_management_accounts_fy2025:p10:u1",
+          "04_management_accounts_fy2025:p11:u1",
+          "04_management_accounts_fy2025:p12:u1",
+          "04_management_accounts_fy2025:p12:u2",
+          "04_management_accounts_fy2025:p12:u3",
+          "05_customer_revenue_analysis:p1:u1",
+          "05_customer_revenue_analysis:p1:u2",
+          "05_customer_revenue_analysis:p2:u1",
+          "05_customer_revenue_analysis:p3:u1",
+          "06_contract_halden_retail:p1:u1",
+          "06_contract_halden_retail:p1:u2",
+          "06_contract_halden_retail:p2:u1",
+          "06_contract_halden_retail:p2:u2",
+          "06_contract_halden_retail:p3:u1",
+          "06_contract_halden_retail:p3:u2",
+          "07_contract_corvo_home:p1:u1",
+          "07_contract_corvo_home:p1:u2",
+          "07_contract_corvo_home:p2:u1",
+          "07_contract_corvo_home:p2:u2",
+          "07_contract_corvo_home:p3:u1",
+          "07_contract_corvo_home:p3:u2",
+          "08_contract_pellam_outdoor:p1:u1",
+          "08_contract_pellam_outdoor:p1:u2",
+          "08_contract_pellam_outdoor:p2:u1",
+          "08_contract_pellam_outdoor:p2:u2",
+          "08_contract_pellam_outdoor:p3:u1",
+          "08_contract_pellam_outdoor:p3:u2",
+          "09_senior_facility_agreement:p1:u1",
+          "09_senior_facility_agreement:p1:u2",
+          "09_senior_facility_agreement:p2:u1",
+          "09_senior_facility_agreement:p2:u2",
+          "09_senior_facility_agreement:p3:u1",
+          "09_senior_facility_agreement:p4:u1",
+          "09_senior_facility_agreement:p5:u1",
+          "10_shareholder_register:p1:u1",
+          "10_shareholder_register:p1:u2",
+          "11_board_minutes:p1:u1",
+          "11_board_minutes:p2:u1",
+          "11_board_minutes:p3:u1",
+          "11_board_minutes:p4:u1",
+          "12_letter_hollis_grant:p1:u1",
+          "12_letter_hollis_grant:p2:u1",
+          "13_office_lease:p1:u1",
+          "13_office_lease:p1:u2",
+          "13_office_lease:p2:u1",
+          "13_office_lease:p2:u2",
+          "13_office_lease:p3:u1"
+        ],
+        "retrieved_pages": [
+          [
+            "02_audited_accounts_fy2024.pdf",
+            1
+          ],
+          [
+            "02_audited_accounts_fy2024.pdf",
+            2
+          ],
+          [
+            "02_audited_accounts_fy2024.pdf",
+            3
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            1
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            2
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            3
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            4
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            1
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            2
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            3
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            4
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            5
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            6
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            7
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            8
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            9
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            10
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            11
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            12
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            1
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            2
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            3
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            1
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            2
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            3
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            1
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            2
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            3
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            1
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            2
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            3
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            1
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            2
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            3
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            4
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            5
+          ],
+          [
+            "10_shareholder_register.pdf",
+            1
+          ],
+          [
+            "11_board_minutes.pdf",
+            1
+          ],
+          [
+            "11_board_minutes.pdf",
+            2
+          ],
+          [
+            "11_board_minutes.pdf",
+            3
+          ],
+          [
+            "11_board_minutes.pdf",
+            4
+          ],
+          [
+            "12_letter_hollis_grant.pdf",
+            1
+          ],
+          [
+            "12_letter_hollis_grant.pdf",
+            2
+          ],
+          [
+            "13_office_lease.pdf",
+            1
+          ],
+          [
+            "13_office_lease.pdf",
+            2
+          ],
+          [
+            "13_office_lease.pdf",
+            3
+          ]
+        ],
+        "evidence": [
+          {
+            "unit_id": "03_audited_accounts_fy2025:p1:u1",
+            "quote": "The average number of employees during the year was 240.",
+            "value": 240,
+            "unit": "count",
+            "period": "FY2025",
+            "role": "direct",
+            "file": "03_audited_accounts_fy2025.pdf",
+            "page": 1,
+            "section_path": "Fintech A Ltd: Audited Financial Statements FY2025 > Directors' report",
+            "verified": true,
+            "reason": ""
+          }
+        ],
+        "computation": null,
+        "computed_value": null,
+        "status": "confirmed",
+        "label": "stated"
+      },
+      {
+        "slide": 9,
+        "quote": "Senior term loan: $25.0M.",
+        "metric": "Senior term loan",
+        "value": 25.0,
+        "unit": "$M",
+        "period": "",
+        "claim_id": "K10",
+        "slide_verified": true,
+        "method": "A",
+        "retrieved": [
+          "02_audited_accounts_fy2024:p1:u1",
+          "02_audited_accounts_fy2024:p2:u1",
+          "02_audited_accounts_fy2024:p3:u1",
+          "03_audited_accounts_fy2025:p1:u1",
+          "03_audited_accounts_fy2025:p2:u1",
+          "03_audited_accounts_fy2025:p3:u1",
+          "03_audited_accounts_fy2025:p4:u1",
+          "03_audited_accounts_fy2025:p4:u2",
+          "04_management_accounts_fy2025:p1:u1",
+          "04_management_accounts_fy2025:p2:u1",
+          "04_management_accounts_fy2025:p3:u1",
+          "04_management_accounts_fy2025:p4:u1",
+          "04_management_accounts_fy2025:p5:u1",
+          "04_management_accounts_fy2025:p6:u1",
+          "04_management_accounts_fy2025:p7:u1",
+          "04_management_accounts_fy2025:p8:u1",
+          "04_management_accounts_fy2025:p9:u1",
+          "04_management_accounts_fy2025:p10:u1",
+          "04_management_accounts_fy2025:p11:u1",
+          "04_management_accounts_fy2025:p12:u1",
+          "04_management_accounts_fy2025:p12:u2",
+          "04_management_accounts_fy2025:p12:u3",
+          "05_customer_revenue_analysis:p1:u1",
+          "05_customer_revenue_analysis:p1:u2",
+          "05_customer_revenue_analysis:p2:u1",
+          "05_customer_revenue_analysis:p3:u1",
+          "06_contract_halden_retail:p1:u1",
+          "06_contract_halden_retail:p1:u2",
+          "06_contract_halden_retail:p2:u1",
+          "06_contract_halden_retail:p2:u2",
+          "06_contract_halden_retail:p3:u1",
+          "06_contract_halden_retail:p3:u2",
+          "07_contract_corvo_home:p1:u1",
+          "07_contract_corvo_home:p1:u2",
+          "07_contract_corvo_home:p2:u1",
+          "07_contract_corvo_home:p2:u2",
+          "07_contract_corvo_home:p3:u1",
+          "07_contract_corvo_home:p3:u2",
+          "08_contract_pellam_outdoor:p1:u1",
+          "08_contract_pellam_outdoor:p1:u2",
+          "08_contract_pellam_outdoor:p2:u1",
+          "08_contract_pellam_outdoor:p2:u2",
+          "08_contract_pellam_outdoor:p3:u1",
+          "08_contract_pellam_outdoor:p3:u2",
+          "09_senior_facility_agreement:p1:u1",
+          "09_senior_facility_agreement:p1:u2",
+          "09_senior_facility_agreement:p2:u1",
+          "09_senior_facility_agreement:p2:u2",
+          "09_senior_facility_agreement:p3:u1",
+          "09_senior_facility_agreement:p4:u1",
+          "09_senior_facility_agreement:p5:u1",
+          "10_shareholder_register:p1:u1",
+          "10_shareholder_register:p1:u2",
+          "11_board_minutes:p1:u1",
+          "11_board_minutes:p2:u1",
+          "11_board_minutes:p3:u1",
+          "11_board_minutes:p4:u1",
+          "12_letter_hollis_grant:p1:u1",
+          "12_letter_hollis_grant:p2:u1",
+          "13_office_lease:p1:u1",
+          "13_office_lease:p1:u2",
+          "13_office_lease:p2:u1",
+          "13_office_lease:p2:u2",
+          "13_office_lease:p3:u1"
+        ],
+        "retrieved_pages": [
+          [
+            "02_audited_accounts_fy2024.pdf",
+            1
+          ],
+          [
+            "02_audited_accounts_fy2024.pdf",
+            2
+          ],
+          [
+            "02_audited_accounts_fy2024.pdf",
+            3
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            1
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            2
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            3
+          ],
+          [
+            "03_audited_accounts_fy2025.pdf",
+            4
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            1
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            2
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            3
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            4
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            5
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            6
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            7
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            8
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            9
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            10
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            11
+          ],
+          [
+            "04_management_accounts_fy2025.pdf",
+            12
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            1
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            2
+          ],
+          [
+            "05_customer_revenue_analysis.pdf",
+            3
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            1
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            2
+          ],
+          [
+            "06_contract_halden_retail.pdf",
+            3
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            1
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            2
+          ],
+          [
+            "07_contract_corvo_home.pdf",
+            3
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            1
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            2
+          ],
+          [
+            "08_contract_pellam_outdoor.pdf",
+            3
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            1
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            2
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            3
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            4
+          ],
+          [
+            "09_senior_facility_agreement.pdf",
+            5
+          ],
+          [
+            "10_shareholder_register.pdf",
+            1
+          ],
+          [
+            "11_board_minutes.pdf",
+            1
+          ],
+          [
+            "11_board_minutes.pdf",
+            2
+          ],
+          [
+            "11_board_minutes.pdf",
+            3
+          ],
+          [
+            "11_board_minutes.pdf",
+            4
+          ],
+          [
+            "12_letter_hollis_grant.pdf",
+            1
+          ],
+          [
+            "12_letter_hollis_grant.pdf",
+            2
+          ],
+          [
+            "13_office_lease.pdf",
+            1
+          ],
+          [
+            "13_office_lease.pdf",
+            2
+          ],
+          [
+            "13_office_lease.pdf",
+            3
+          ]
+        ],
+        "evidence": [
+          {
+            "unit_id": "09_senior_facility_agreement:p1:u1",
+            "quote": "The Lender makes available a term loan facility of $25.0M.",
+            "value": 25.0,
+            "unit": "$M",
+            "period": "none",
+            "role": "direct",
+            "file": "09_senior_facility_agreement.pdf",
+            "page": 1,
+            "section_path": "Senior Facility Agreement: Fintech A Ltd and Avonmore Bank plc > 1. The facility",
+            "verified": false,
+            "reason": "period not on page"
+          }
+        ],
+        "computation": null,
+        "computed_value": null,
+        "status": "unverified",
+        "label": ""
+      }
+    ]
+  },
+  "red_flags": [
+    {
+      "check_id": "customer_concentration",
+      "observation": "Halden Retail Group accounted for $11.22 million of $36.20 million in total FY2025 revenue, representing approximately 31% of revenue.",
+      "unit_id": "05_customer_revenue_analysis:p2:u1",
+      "quote": "Halden Retail Group | 11.22",
+      "role": "context",
+      "file": "05_customer_revenue_analysis.pdf",
+      "page": 2,
+      "section_path": "Fintech A Ltd: Customer Revenue Analysis FY2024 to FY2025 > Top 10 customers by revenue",
+      "verified": true,
+      "reason": "",
+      "advice_words": [],
+      "flag_id": "F1"
+    },
+    {
+      "check_id": "contracts_ending",
+      "observation": "The master services agreement with Halden Retail Group ends on 28 February 2027, and no renewal has been agreed.",
+      "unit_id": "06_contract_halden_retail:p2:u1",
+      "quote": "This agreement starts on 1 March 2022 and ends on 28 February 2027.",
+      "role": "context",
+      "file": "06_contract_halden_retail.pdf",
+      "page": 2,
+      "section_path": "Master Services Agreement: Fintech A Ltd and Halden Retail Group > 3. Term",
+      "verified": true,
+      "reason": "",
+      "advice_words": [],
+      "flag_id": "F2"
+    },
+    {
+      "check_id": "change_of_control",
+      "observation": "The loan must be repaid in full with accrued interest within 30 days if any person or group acquires more than 25% of the Borrower's shares.",
+      "unit_id": "09_senior_facility_agreement:p4:u1",
+      "quote": "If any person or group acting together acquires more than 25% of the shares in the Borrower, the Borrower must repay the loan in full, with accrued interest, within 30 days of that change of control.",
+      "role": "context",
+      "file": "09_senior_facility_agreement.pdf",
+      "page": 4,
+      "section_path": "Senior Facility Agreement: Fintech A Ltd and Avonmore Bank plc > 14. Mandatory prepayment",
+      "verified": true,
+      "reason": "",
+      "advice_words": [],
+      "flag_id": "F3"
+    },
+    {
+      "check_id": "other",
+      "observation": "Chief Financial Officer Priya Raman resigned effective 30 September 2026, with the Financial Controller serving as interim CFO.",
+      "unit_id": "11_board_minutes:p4:u1",
+      "quote": "The board noted the resignation of Priya Raman, Chief Financial Officer, effective 30 September 2026.",
+      "role": "context",
+      "file": "11_board_minutes.pdf",
+      "page": 4,
+      "section_path": "Fintech A Ltd: Board Minutes > Meeting of 24 September 2026",
+      "verified": true,
+      "reason": "",
+      "advice_words": [],
+      "flag_id": "F4"
+    },
+    {
+      "check_id": "legal_claims",
+      "observation": "Brightpay Partners Ltd claims $2.1M in unpaid commission and damages from Fintech A Ltd and threatens to issue proceedings unless settled within 60 days.",
+      "unit_id": "12_letter_hollis_grant:p1:u1",
+      "quote": "Our client claims $2.1M in unpaid commission and damages for the termination of its reseller agreement in 2025.",
+      "role": "context",
+      "file": "12_letter_hollis_grant.pdf",
+      "page": 1,
+      "section_path": "Letter from Hollis Grant LLP > Re: Claim by Brightpay Partners Ltd",
+      "verified": true,
+      "reason": "",
+      "advice_words": [],
+      "flag_id": "F5"
+    },
+    {
+      "check_id": "other",
+      "observation": "The landlord Calder Property Ltd is wholly owned by Daniel Okafor, and an independent agent valued comparable market rent at $60 per square foot per year in December 2023.",
+      "unit_id": "13_office_lease:p3:u1",
+      "quote": "Calder Property Ltd is wholly owned by Daniel Okafor. An independent agent valued the market rent for comparable space at $60 per square foot per year in December 2023.",
+      "role": "context",
+      "file": "13_office_lease.pdf",
+      "page": 3,
+      "section_path": "Lease: 4th floor, 12 Wharf Street, London > Schedule 2: Landlord details and rent valuation",
+      "verified": true,
+      "reason": "",
+      "advice_words": [],
+      "flag_id": "F6"
+    }
+  ],
+  "trace_ids": {
+    "A": "c1e37d362c3415436eeec791764d3d3b",
+    "red_flags": "c1e37d362c3415436eeec791764d3d3b"
+  },
+  "calls": [
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "d5bffe784df8e7b4149555b8d2de6189.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "04caca5e736571d478abb497d3859324.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "4ab5c20fe202fa6cf0a41f13e9e995af.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "b03a79dcf31a9eb3786c43a6da42aed6.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "7606c400d6749140913e515f2bee6a9a.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "df339988b78e7f105cd8e61454b14a75.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "17dd210664729e63ef6fa49ec1783dd2.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "4474e3aea960d4f3e9451342cd74caf1.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "a9e838f59ec7edc0da9afa8413ce3602.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "4af114191ece1f4068995c7a948f7ee9.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "de2d30efdb842f0029427e9b19f5c8ab.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "82b0e32ffff878eef3251e88d4323d9f.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "cd07bd1acad5f9bf50d4d88406c74fa5.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "3a88cd0a5f5d52167af6ec0f5a094de9.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "8f12c13cfa28a8d00f4384e7349911d5.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "34c075f894ae38e96b496a75ddc4c609.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "df3077df2058dcfa953a49dbfb414b60.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "0459ec2eb2a593d511aa26dfbdf37ea7.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "89e2c68ddf4959d805515d9afdf324de.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "867aef4f1b6b385e258bba3b36f5ad05.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "1da74bad213b372256995fdc1b44d70d.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "5756105ab3b47f0a9f42624eb8207f00.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "3f73d90d1d7e776102aa44162bd41358.json",
+      "cache_hit": true
+    },
+    {
+      "kind": "json",
+      "model": "gemini-3.8-flash+gemini-embedding-2",
+      "cache_file": "80cd414ae8aec5c015ed0dae630826bf.json",
+      "cache_hit": true
+    }
+  ]
+}

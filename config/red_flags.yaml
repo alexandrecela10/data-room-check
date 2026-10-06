@@ -1,0 +1,19 @@
+# Red flag list. The AI runs every check over every page of every file.
+# Each finding must quote the page it came from. Findings are observations,
+# never advice.
+
+checks:
+  - id: change_of_control
+    ask: "A clause that changes or ends an agreement if the company's owners change (repayment, termination, consent needed)."
+  - id: legal_claims
+    ask: "A legal claim, lawsuit, threatened proceedings or dispute involving the company."
+  - id: contracts_ending
+    ask: "A customer, supplier or financing contract that ends within 12 months of October 2026, or has no renewal agreed."
+  - id: unpaid_taxes
+    ask: "Taxes owed, overdue or disputed."
+  - id: covenant_breach
+    ask: "A loan condition (covenant) that is broken, or within 10% of its limit."
+  - id: customer_concentration
+    ask: "One customer above 20% of revenue."
+  - id: other
+    ask: "Any other fact a careful investor would want to know before investing, that the checks above don't cover."

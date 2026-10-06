@@ -1,0 +1,86 @@
+{
+  "model": "gemini-3.8-flash+gemini-embedding-2",
+  "red_flags": {
+    "found": "6 of 6",
+    "off_list_found": "2 of 2",
+    "missed": [],
+    "findings": 8,
+    "true_findings": 6,
+    "false_findings": [
+      "F1",
+      "F5"
+    ],
+    "advice_leakage": []
+  },
+  "methods": {
+    "A": {
+      "wrong_numbers_flagged": "3 of 4",
+      "correct_numbers_wrongly_flagged": "0 of 6",
+      "exact_status": "9 of 10",
+      "missed_claims": [],
+      "evidence_pages_found": "12 of 12 (100%)",
+      "lineage": "25 of 25 (100%)",
+      "unverified": [],
+      "precision": "9 of 11 (82%)",
+      "statuses": {
+        "V1": "contradicted",
+        "V2": "contradicted",
+        "V3": "not_found",
+        "V4": "conflict",
+        "C1": "confirmed",
+        "C2": "confirmed",
+        "C3": "confirmed",
+        "C4": "confirmed",
+        "C5": "confirmed",
+        "C6": "confirmed"
+      },
+      "verdict": "KILL: precision 82% < 95%"
+    },
+    "B": {
+      "wrong_numbers_flagged": "2 of 4",
+      "correct_numbers_wrongly_flagged": "0 of 6",
+      "exact_status": "8 of 10",
+      "missed_claims": [],
+      "evidence_pages_found": "10 of 12 (83%)",
+      "lineage": "23 of 23 (100%)",
+      "unverified": [],
+      "precision": "8 of 10 (80%)",
+      "statuses": {
+        "V1": "contradicted",
+        "V2": "contradicted",
+        "V3": "not_found",
+        "V4": "confirmed",
+        "C1": "confirmed",
+        "C2": "confirmed",
+        "C3": "confirmed",
+        "C4": "confirmed",
+        "C5": "confirmed",
+        "C6": "confirmed"
+      },
+      "verdict": "KILL: precision 80% < 95%"
+    },
+    "C": {
+      "wrong_numbers_flagged": "3 of 4",
+      "correct_numbers_wrongly_flagged": "0 of 6",
+      "exact_status": "9 of 10",
+      "missed_claims": [],
+      "evidence_pages_found": "12 of 12 (100%)",
+      "lineage": "25 of 25 (100%)",
+      "unverified": [],
+      "precision": "9 of 11 (82%)",
+      "statuses": {
+        "V1": "contradicted",
+        "V2": "contradicted",
+        "V3": "not_found",
+        "V4": "conflict",
+        "C1": "confirmed",
+        "C2": "confirmed",
+        "C3": "confirmed",
+        "C4": "confirmed",
+        "C5": "confirmed",
+        "C6": "confirmed"
+      },
+      "verdict": "KILL: precision 82% < 95%"
+    }
+  }
+}
