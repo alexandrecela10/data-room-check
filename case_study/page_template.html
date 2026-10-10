@@ -358,5 +358,32 @@
 
 <footer>Alexandre Cela · Data and AI products for private capital · alexandrecelap@gmail.com<br>Sibling project: <a href="../deck-rank/">Deck Rank</a> ranks the decks a fund receives. Data Room Check checks the one you're about to invest in.</footer>
 </div>
+<!-- Analytics: GoatCounter, cookieless. Exclude your own browser once with #toggle-goatcounter -->
+<script data-goatcounter="https://alexandrecela.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+(function () {
+  var page = location.pathname.replace(/index\.html$/, '');
+  function ev(name) {
+    if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path: name, title: name, event: true });
+  }
+  // Link clicks: which button, on which project card or page
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a');
+    if (!a) return;
+    var card = a.closest('.card');
+    var h = card && card.querySelector('h3');
+    var label = (a.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 40);
+    ev('click: ' + (h ? h.textContent.trim() + ': ' : '') + label + ' (' + page + ')');
+  });
+  // "Go deeper" sections opened
+  document.querySelectorAll('details').forEach(function (d) {
+    d.addEventListener('toggle', function () {
+      if (!d.open) return;
+      var s = d.querySelector('summary');
+      ev('open: ' + (s ? s.firstChild.textContent.trim() : 'section') + ' (' + page + ')');
+    });
+  });
+})();
+</script>
 </body>
 </html>
