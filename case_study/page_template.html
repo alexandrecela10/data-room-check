@@ -114,6 +114,12 @@
   .doc table { margin:10px 0; display:block; overflow-x:auto; } .doc hr { border:0; border-top:1px solid var(--line); margin:20px 0; }
   .doc blockquote { border-left:3px solid var(--accent); margin:12px 0; padding:2px 14px; color:var(--dim); }
   .doc code { font-size:13px; color:var(--dim); }
+  /* Technique pills: the technical craft behind each project */
+  .craft { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:26px 0 0; }
+  .craft .lbl { color:var(--dim); font-size:12px; text-transform:uppercase; letter-spacing:.08em; margin-right:6px; }
+  .pill { font-size:13px; line-height:1.4; background:var(--panel); border:1px solid var(--line); border-radius:999px; padding:4px 12px; }
+  .pill b { font-size:10px; font-weight:900; letter-spacing:.08em; text-transform:uppercase; margin-right:6px; color:var(--accent); }
+  .pill.de b { color:#3ecf8e; } .pill.ds b { color:#ffd23f; } .pill.ev b { color:#ff9f6b; }
 </style>
 </head>
 <body>
@@ -143,6 +149,7 @@
     <div><dt>Data</dt><dd>13 fictional files, 56 pages, 1 deck</dd></div>
     <div><dt>Built with</dt><dd>Gemini, Python, Streamlit, Langfuse</dd></div>
   </dl>
+  <div class="craft"><span class="lbl">Techniques</span><span class="pill ai"><b>AI</b>Long-context reading: whole data room in one call</span><span class="pill ai"><b>AI</b>Hybrid RAG: embeddings + BM25, reciprocal rank fusion</span><span class="pill ai"><b>AI</b>PageIndex: the AI navigates tables of contents</span><span class="pill ai"><b>AI</b>Two-stage RAG + PageIndex</span><span class="pill de"><b>Data eng</b>PDF ingestion to page-level passages</span><span class="pill ev"><b>Eval</b>Code-verified citations</span><span class="pill ev"><b>Eval</b>Answer key written before the first run</span><span class="pill ev"><b>Eval</b>Prompt versions compared, traced in Langfuse</span></div>
 </header>
 
 <!-- 01 VISION -->
