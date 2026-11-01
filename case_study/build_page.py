@@ -145,8 +145,6 @@ def build(out: Path):
         price_in=SNAP["prices"]["input"], price_out=SNAP["prices"]["output"],
         tree_a=tree_html("A"), tree_b=tree_html("B"), tree_c=tree_html("C"), tree_d=tree_html("D"),
         flags_found=rf["found"], off_list=rf["off_list_found"],
-        cost_min=f'{min(x["cost_usd_10_claims"] for x in b.values()):.2f}',
-        cost_max=f'{max(x["cost_usd_10_claims"] for x in b.values()):.2f}',
     )
     docs = ROOT / "case_study" / "docs"
     for k, f in (("opp_doc", "opportunity-assessment.md"), ("prd_doc", "prd.md")):
